@@ -1,6 +1,7 @@
 "use client";
 
-import { Mail, Linkedin, Github } from "lucide-react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const projects = [
   {
@@ -36,8 +37,6 @@ const skills = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-
-      {/* NAVBAR */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div>
@@ -46,15 +45,22 @@ export default function Home() {
           </div>
 
           <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#projects" className="hover:text-white">Projects</a>
-            <a href="#skills" className="hover:text-white">Skills</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
+            <a href="#about" className="hover:text-white">
+              About
+            </a>
+            <a href="#projects" className="hover:text-white">
+              Projects
+            </a>
+            <a href="#skills" className="hover:text-white">
+              Skills
+            </a>
+            <a href="#contact" className="hover:text-white">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
 
-      {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 py-24">
         <p className="mb-4 inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
           Open to Cloud, AI, and IT Systems roles
@@ -67,39 +73,38 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-slate-300">
-          Cloud & AI engineer focused on building real-world systems using machine learning,
-          APIs, deployment pipelines, and production support.
+          Cloud & AI engineer focused on building real-world systems using
+          machine learning, APIs, deployment pipelines, and production support.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 hover:scale-[1.02] transition"
+            className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
             View Projects
           </a>
 
           <a
             href="#contact"
-            className="rounded-2xl border border-white/20 px-6 py-3 font-medium hover:bg-white/10 transition"
+            className="rounded-2xl border border-white/20 px-6 py-3 font-medium transition hover:bg-white/10"
           >
             Contact Me
           </a>
         </div>
       </section>
 
-      {/* ABOUT */}
       <section id="about" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold">About Me</h2>
 
         <p className="mt-6 max-w-3xl text-lg text-slate-300">
-          I am a Cloud & AI Engineer with a strong interest in building intelligent systems that are scalable,
-          deployment-ready, and production-focused. I combine machine learning, cloud platforms, and IT operations
-          to solve real-world problems.
+          I am a Cloud & AI Engineer with a strong interest in building
+          intelligent systems that are scalable, deployment-ready, and
+          production-focused. I combine machine learning, cloud platforms, and
+          IT operations to solve real-world problems.
         </p>
       </section>
 
-      {/* PROJECTS */}
       <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold">Featured Projects 🚀</h2>
 
@@ -107,7 +112,7 @@ export default function Home() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="rounded-3xl border border-white/10 bg-white/5 p-6 hover:-translate-y-1 transition"
+              className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1"
             >
               <h3 className="text-xl font-semibold">{project.title}</h3>
 
@@ -137,7 +142,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKILLS */}
       <section id="skills" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold">Skills ⚡</h2>
 
@@ -164,17 +168,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
       <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold">Contact 📩</h2>
 
         <div className="mt-6 flex flex-col gap-4">
-
           <a
-            href="mailto:your-email@example.com"
-            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 hover:bg-white/10 transition"
+            href="mailto:pai24rohit@gmail.com"
+            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 transition hover:bg-white/10"
           >
-            <Mail size={18} />
+            <MdEmail size={20} />
             Email Me
           </a>
 
@@ -182,9 +184,9 @@ export default function Home() {
             href="https://www.linkedin.com/in/dinkarnpai/"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 hover:bg-blue-500/20 transition"
+            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 transition hover:bg-blue-500/20"
           >
-            <Linkedin size={18} />
+            <FaLinkedin size={20} className="text-blue-500" />
             LinkedIn
           </a>
 
@@ -192,15 +194,13 @@ export default function Home() {
             href="https://github.com/Dinkarpai"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 hover:bg-gray-500/20 transition"
+            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 transition hover:bg-white/10"
           >
-            <Github size={18} />
+            <FaGithub size={20} />
             GitHub
           </a>
-
         </div>
       </section>
-
     </main>
   );
 }
