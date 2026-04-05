@@ -1,3 +1,5 @@
+"use client";
+
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const projects = [
