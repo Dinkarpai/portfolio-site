@@ -169,37 +169,52 @@ export default function Home() {
       </section>
 
       <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-semibold">Contact 📩</h2>
+  <h2 className="text-3xl font-semibold">Let’s Connect 🚀</h2>
 
-        <div className="mt-6 flex flex-col gap-4">
-          <a
-            href="mailto:pai24rohit@gmail.com"
-            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 transition hover:bg-white/10"
-          >
-            <MdEmail size={20} />
-            Email Me
-          </a>
+  <div className="mt-8 grid gap-6 md:grid-cols-3">
 
-          <a
-            href="https://www.linkedin.com/in/dinkarnpai/"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 transition hover:bg-blue-500/20"
-          >
-            <FaLinkedin size={20} className="text-blue-500" />
-            LinkedIn
-          </a>
+    {/* EMAIL */}
+    <a
+      href="mailto:your-email@example.com"
+      className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:scale-[1.02] hover:bg-white/10"
+    >
+      <MdEmail size={28} className="text-cyan-300" />
+      <div>
+        <p className="text-lg font-semibold">Email</p>
+        <p className="text-sm text-slate-400">Send me a message</p>
+      </div>
+    </a>
 
-          <a
-            href="https://github.com/Dinkarpai"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 transition hover:bg-white/10"
-          >
-            <FaGithub size={20} />
-            GitHub
-          </a>
-        </div>
+    {/* LINKEDIN */}
+    <a
+      href="https://www.linkedin.com/in/dinkarnpai/"
+      target="_blank"
+      rel="noreferrer"
+      className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:scale-[1.02] hover:bg-blue-500/20"
+    >
+      <FaLinkedin size={28} className="text-blue-500" />
+      <div>
+        <p className="text-lg font-semibold">LinkedIn</p>
+        <p className="text-sm text-slate-400">View my profile</p>
+      </div>
+    </a>
+
+    {/* GITHUB */}
+    <a
+      href="https://github.com/Dinkarpai"
+      target="_blank"
+      rel="noreferrer"
+      className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:scale-[1.02] hover:bg-gray-500/20"
+    >
+      <FaGithub size={28} className="text-white" />
+      <div>
+        <p className="text-lg font-semibold">GitHub</p>
+        <p className="text-sm text-slate-400">View my projects</p>
+      </div>
+    </a>
+
+  </div>
+
       </section>
     </main>
   );
