@@ -66,7 +66,7 @@ export default function Home() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 py-24 md:py-28">
         <p className="mb-4 inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
-          Open to Cloud, AI, and IT Systems roles
+          Open to Cloud, AI, and IT Operations roles
         </p>
 
         <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-7xl">
@@ -122,47 +122,60 @@ export default function Home() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-semibold">Featured Projects 🚀</h2>
+<section id="projects" className="mx-auto max-w-6xl px-6 py-16">
+  <h2 className="text-3xl font-semibold">Featured Projects</h2>
+  <p className="mt-3 max-w-2xl text-slate-300">
+    A selection of projects focused on AI, machine learning, and practical systems thinking.
+  </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="rounded-3xl border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07]"
+  <div className="mt-8 grid gap-6 md:grid-cols-2">
+    {projects.map((project) => (
+      <div
+        key={project.title}
+        className="group rounded-3xl border border-white/10 bg-white/5 p-7 shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-2 hover:border-cyan-400/30 hover:bg-white/[0.07]"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <span className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
+              Featured Project
+            </span>
+
+            <h3 className="mt-4 text-2xl font-semibold">{project.title}</h3>
+
+            <p className="mt-2 text-sm text-cyan-300">{project.subtitle}</p>
+          </div>
+        </div>
+
+        <p className="mt-5 leading-7 text-slate-300">
+          {project.description}
+        </p>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          {project.tech.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
             >
-              <h3 className="text-2xl font-semibold">{project.title}</h3>
-
-               <p className="mt-1 text-sm text-cyan-300">
-                 {project.subtitle}
-               </p>
-
-              <p className="mt-4 text-slate-300">{project.description}</p>
-
-              <div className="mt-5 flex flex-wrap gap-2">
-                {project.tech.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 text-lg font-medium text-cyan-300 hover:text-cyan-200"
-              >
-                <FaGithub />
-                View Project →
-              </a>
-            </div>
+              {item}
+            </span>
           ))}
         </div>
-      </section>
+
+        <div className="mt-7 flex flex-wrap gap-4">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 font-medium text-cyan-300 transition hover:bg-cyan-400/20"
+          >
+            <FaGithub size={18} />
+            View Project
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* RESUME */}
        <section id="resume" className="mx-auto max-w-6xl px-6 py-16">
