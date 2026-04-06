@@ -5,17 +5,19 @@ import { MdEmail } from "react-icons/md";
 
 const projects = [
   {
-    title: "AI-incident-analyser",
+    title: "AI Incident Analyzer",
+    subtitle: "AI-powered system for incident intelligence",
     description:
-      "AI-powered incident analysis project focused on identifying, interpreting, and supporting investigation of system incidents.",
-    tech: ["Python", "AI", "Incident Analysis", "Monitoring"],
+      "Developed an AI-driven solution to analyze system incidents, extract insights, and support faster root cause analysis in production environments.",
+    tech: ["Python", "AI/ML", "Monitoring", "Incident Analysis"],
     github: "https://github.com/Dinkarpai/AI-incident-analyser",
   },
   {
-    title: "news-sentiment-analysis-logictic-regmodel",
+    title: "News Sentiment Analysis",
+    subtitle: "Machine learning model for sentiment classification",
     description:
-      "News sentiment analysis project using logistic regression models to classify sentiment from news content and support decision-making workflows.",
-    tech: ["Python", "NLP", "Logistic Regression", "Sentiment Analysis"],
+      "Built a sentiment analysis model using logistic regression to classify news data and generate actionable insights for decision-making workflows.",
+    tech: ["Python", "NLP", "Logistic Regression", "Data Analysis"],
     github:
       "https://github.com/Dinkarpai/news-sentiment-analysis-logictic-regmodel",
   },
@@ -130,6 +132,10 @@ export default function Home() {
               className="rounded-3xl border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07]"
             >
               <h3 className="text-2xl font-semibold">{project.title}</h3>
+
+               <p className="mt-1 text-sm text-cyan-300">
+                 {project.subtitle}
+               </p>
 
               <p className="mt-4 text-slate-300">{project.description}</p>
 
