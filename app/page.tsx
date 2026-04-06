@@ -64,48 +64,80 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="mx-auto max-w-6xl px-6 py-24 md:py-28">
-        <p className="mb-4 inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
-          Open to Cloud, AI, and IT Operations roles
-        </p>
+<section className="mx-auto max-w-6xl px-6 py-24 md:py-28">
+  <div className="grid items-center gap-10 md:grid-cols-2">
+    <div>
+      <p className="mb-4 inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
+        Open to Cloud, AI, and IT Systems roles
+      </p>
 
-        <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-7xl">
-          Hi, I’m Dinkar Pai 👋
-          <br />
-          I build scalable AI & cloud systems.
-        </h1>
+      <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-7xl">
+        Hi, I’m Dinkar Pai 👋
+        <br />
+        I build scalable AI & cloud systems.
+      </h1>
 
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-          Cloud & AI engineer focused on building real-world systems using
-          machine learning, APIs, deployment pipelines, and production support.
-        </p>
+      <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+        Cloud & AI engineer focused on building real-world systems using
+        machine learning, APIs, deployment pipelines, and production support.
+      </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
-          <a
-            href="#projects"
-            className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
-          >
-            View Projects
-          </a>
+      <div className="mt-8 flex flex-wrap gap-4">
+        <a
+          href="#projects"
+          className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+        >
+          View Projects
+        </a>
 
-          <a
-            href="#contact"
-            className="rounded-2xl border border-white/20 px-6 py-3 font-medium transition hover:bg-white/10"
-          >
-            Contact Me
-          </a>
+        <a
+          href="#contact"
+          className="rounded-2xl border border-white/20 px-6 py-3 font-medium transition hover:bg-white/10"
+        >
+          Contact Me
+        </a>
 
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-6 py-3 font-medium text-cyan-300 transition hover:bg-cyan-400/20"
-          >
-            <FaFilePdf />
-            View Resume
-          </a>
+        <a
+          href="/DPResumeMain2026.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-3 rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-6 py-3 font-medium text-cyan-300 transition hover:bg-cyan-400/20"
+        >
+          <FaFilePdf size={18} />
+          View Resume
+        </a>
+      </div>
+    </div>
+
+    <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-cyan-950/10">
+      <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
+        Quick Snapshot
+      </p>
+
+      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+          <p className="text-3xl font-bold">2</p>
+          <p className="mt-1 text-sm text-slate-400">Featured Projects</p>
         </div>
-      </section>
+
+        <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+          <p className="text-3xl font-bold">Cloud + AI</p>
+          <p className="mt-1 text-sm text-slate-400">Core Focus</p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+          <p className="text-3xl font-bold">ML</p>
+          <p className="mt-1 text-sm text-slate-400">Practical Systems</p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+          <p className="text-3xl font-bold">Toronto</p>
+          <p className="mt-1 text-sm text-slate-400">Based in Canada</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ABOUT */}
       <section id="about" className="mx-auto max-w-6xl px-6 py-16">
