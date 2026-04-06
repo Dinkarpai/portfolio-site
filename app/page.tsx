@@ -33,14 +33,12 @@ const skills = {
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-slate-100 text-slate-900">
-      {/* LIGHT TECH BACKGROUND */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(56,189,248,0.18),transparent_24%),radial-gradient(circle_at_85%_5%,rgba(99,102,241,0.14),transparent_28%),radial-gradient(circle_at_50%_85%,rgba(34,211,238,0.12),transparent_26%)]" />
         <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,rgba(15,23,42,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.12)_1px,transparent_1px)] bg-[size:40px_40px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-slate-100/40 to-slate-200/30" />
       </div>
 
-      {/* NAVBAR */}
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div>
@@ -68,7 +66,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 py-24 md:py-28">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="relative">
@@ -147,7 +144,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT */}
       <section id="about" className="mx-auto max-w-6xl px-6 py-16">
         <div className="rounded-3xl border border-white/70 bg-white/70 p-8 shadow-xl shadow-slate-200 backdrop-blur-xl">
           <h2 className="text-3xl font-semibold text-slate-950">About Me</h2>
@@ -161,7 +157,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
       <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold text-slate-950">Featured Projects</h2>
         <p className="mt-3 max-w-2xl text-slate-700">
@@ -217,7 +212,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* RESUME */}
       <section id="resume" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold text-slate-950">Resume 📄</h2>
 
@@ -243,7 +237,7 @@ export default function Home() {
               </a>
 
               <a
-                href="/DPResumeMain2026.pdf"
+                href="/Dinkar_Pai_Resume_2026.pdf"
                 download
                 className="inline-flex items-center gap-3 rounded-2xl border border-cyan-200 bg-cyan-50 px-6 py-3 font-medium text-cyan-700 transition hover:bg-cyan-100"
               >
@@ -255,7 +249,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKILLS */}
       <section id="skills" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold text-slate-950">Skills ⚡</h2>
 
@@ -282,7 +275,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
       <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold text-slate-950">Let’s Connect 🚀</h2>
 
@@ -326,7 +318,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="mt-20 border-t border-slate-200">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
           <p>© 2026 Dinkar Pai</p>
