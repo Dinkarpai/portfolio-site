@@ -227,7 +227,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="/DPResumeMain2026.pdf"
+                href="/Dinkar_Pai_Resume_2026.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-3 rounded-2xl border border-slate-300 bg-white px-6 py-3 font-medium text-slate-800 transition hover:bg-slate-50"
