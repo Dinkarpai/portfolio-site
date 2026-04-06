@@ -325,6 +325,12 @@ export default function Home() {
           </a>
         </div>
       </section>
+      <footer className="mt-20 border-t border-white/10">
+       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+         <p>© 2026 Dinkar Pai</p>
+         <p>Built with Next.js, Tailwind CSS, and Vercel</p>
+         </div>
+      </footer>
     </main>
   );
 }
