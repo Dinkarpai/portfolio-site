@@ -77,14 +77,13 @@ export default function Home() {
             </p>
 
             <h1 className="relative max-w-4xl text-4xl font-bold leading-tight text-slate-950 md:text-7xl">
-              Hi, I’m Dinkar Pai 👋
+              Hello, I’m Dinkar Pai
               <br />
               I build scalable AI & cloud systems.
             </h1>
 
             <p className="relative mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              Cloud & AI engineer focused on building real-world systems using
-              machine learning, APIs, deployment pipelines, and production support.
+              Cloud & AI Engineer focused on turning machine learning models into real-world, production-ready systems — combining APIs, cloud infrastructure, and monitoring to deliver reliable, scalable solutions.
             </p>
 
             <div className="relative mt-8 flex flex-wrap gap-4">
@@ -149,10 +148,7 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-slate-950">About Me</h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            I am a Cloud & AI Engineer with a strong interest in building
-            intelligent systems that are scalable, deployment-ready, and
-            production-focused. I combine machine learning, cloud platforms, and
-            IT operations to solve real-world problems.
+            Cloud & AI Engineer building intelligent, scalable, and production-ready systems for real-world applications. I combine machine learning, cloud platforms, and IT operations to deliver reliable solutions.
           </p>
         </div>
       </section>
