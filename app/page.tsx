@@ -102,7 +102,7 @@ export default function Home() {
               </a>
 
               <a
-                href="/DPResumeMain2026.pdf"
+                href="/Dinkar_Pai_Resume_2026.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-3 rounded-2xl border border-cyan-200 bg-cyan-50 px-6 py-3 font-medium text-cyan-700 transition hover:bg-cyan-100"
